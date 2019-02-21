@@ -1,10 +1,10 @@
 ###############################################
 ###   TEMPLATE JENKINS-TERRAFORM   ########### 
 ###############################################
-Proyecto = IBERCLOUD
-VM_Name = iber
-VM_Count = 1
+Proyecto = Spacewalk
+VM_Name = test-space
+VM_Count = 3
 vCPU_Number = 1
 RAM_Size = 1
 Disk_Size = 10
-IP_Address = 10.10.1.xxx
+IP_Address = 172.24.188.173
