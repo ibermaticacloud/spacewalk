@@ -26,7 +26,7 @@
       shell: systemctl stop firewalld
 
     - name: Registrar
-      shell: rhnreg_ks --activationkey 1-754bd8f0fb0ba2d2ec6079fdfa9991cb --serverUrl https://spacewalk-css-sso/XMLRPC
+      shell: rhnreg_ks --activationkey 1-754bd8f0fb0ba2d2ec6079fdfa9991cb --serverUrl https://172.24.188.171/XMLRPC
 
     - name: Forzar check
       shell: rhn_check
