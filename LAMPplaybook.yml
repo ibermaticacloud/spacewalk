@@ -12,7 +12,11 @@
       shell: sed -i "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
       when: result.stdout == "Enforcing"
       ignore_errors: True
-
+      
+    - name: Add repos 1
+      shell: rpm -Uvh https://copr-be.cloud.fedoraproject.org/results/@spacewalkproject/spacewalk-2.9-client/epel-7-x86_64/00830558-spacewalk-repo/spacewalk-client-repo-2.9-4.el7.noarch.rpm  
+      ignore_errors: True
+      
     - name: Install Package
       yum: name=epel-release,rhn-client-tools,rhn-check,rhn-setup,rhnsd,m2crypto,yum-rhn-plugin,rhncfg-actions state=latest
 
